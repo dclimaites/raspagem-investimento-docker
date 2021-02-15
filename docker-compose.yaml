@@ -1,0 +1,15 @@
+version: "3"
+services:
+
+  raspagem-investimento-api:
+    container_name: raspagem-investimento-api
+    image: diegoclimaites/raspagem-investimento-api
+    restart: always
+    ports:
+      - "9000:80"
+    networks:
+      - raspagem-investimento
+
+networks:
+  raspagem-investimento:
+    # external: true
